@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM</title>
+    <style>
+        div{
+            margin-top: 80px;
+        }
+        body{
+        background-color: burlywood;
+      }
+      
+
+    button,
+  button::after {
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  button {
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 1em auto;
+    padding: 2em 6em;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  button::before,
+  button::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  
+  button:hover {
+    color: #df7f11;
+  }
+
+  .btn-4::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-4::after {
+    background:  #df7f11;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-4:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+     
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <button class="btn-4"><a href="sem1">1ST SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem2">2ND SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem3">3RD SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem4">4TH SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem5">5TH SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem6">6TH SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem7">7TH SEM</button></a>
+            <br>
+            <button class="btn-4"><a href="sem8">8TH SEM</button></a>
+            <br>
+        </div>
+    </form>
+</body>
+</html>
